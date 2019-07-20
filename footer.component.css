@@ -1,0 +1,11 @@
+@import '../../colors';
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  background : $grey;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: $green;
+}
