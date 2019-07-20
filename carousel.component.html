@@ -1,0 +1,33 @@
+<div class="container">
+  <ul class="carousel">
+    <li *ngFor="let c of carousel; let k=index" {{cssclass}}>
+      <img src="{{c.url}}" alt="c.title"/>
+    </li>
+
+    {{index + 1}} of {{cars.length}}
+    <div class="col-sm-4"></div>
+    <div class="col-sm-8">
+      1 of 4
+    </div>
+    <div class="col-sm-4"></div>
+    <button (click)="next" class="btn btn-primary prev-button">
+      next
+    </button>
+  </ul>
+
+  <ul class="carousel">
+    <li *ngFor="let c of carousel; let k=index">
+      <img src="{{c.url}}" alt="c.title"/>
+    </li>
+
+    {{index + 1}} of {{cars.length}}
+    <div class="col-sm-4"></div>
+    <div class="col-sm-8">
+      1 of 4
+    </div>
+    <div class="col-sm-4"></div>
+    <button (click)="next" class="btn btn-primary next-button">
+      next
+    </button>
+  </ul>
+</div>

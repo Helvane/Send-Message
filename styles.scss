@@ -1,0 +1,29 @@
+@import '~bootstrap/scss/bootstrap';
+
+@import 'colors';
+
+@mixin sanbutton($fontcolor, $color, $border-radius, $class-name) {
+  .#{class-name} {
+    background: $color;
+    border-radius: $border-radius;
+    color: $fontcolor;
+    font-size: 12pt;
+  }
+}
+
+
+@include sanbutton($pink, $grey, '5px', 'prev-button');
+
+@include sanbutton($green, $green, '5px', 'next-button');
+
+@mixin sanbutton($time, $animation-name, $class-name) {
+  .#{class-name} {
+    animation-name: $animation-name;
+    animation-duration: $time;
+
+  }
+}
+
+@include sananimation (1s, 'slideleft', 'goleft')
+
+@include sananimation (1s, 'slideright', 'goright')
